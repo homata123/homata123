@@ -35,7 +35,8 @@ I have ever been an AI internship to earn exprience in some companies, join in r
 
 1. HUSTGRADE - A Scan-and-Grade exam score local web app built with OpenCV
 
-<figure style="display: block; margin: 0px 0px 1.625em; outline: 0px !important; position: relative; box-sizing: inherit; padding: 0px; font-weight: 300; font-size: 16px; clear: both; color: rgb(27, 30, 35); font-family: " open="" sans",="" "helvetica="" neue",="" helvetica,="" arial,="" sans-serif;="" font-style:="" normal;="" font-variant-ligatures:="" font-variant-caps:="" letter-spacing:="" orphans:="" 2;="" text-align:="" start;="" text-indent:="" 0px;="" text-transform:="" none;="" white-space:="" widows:="" word-spacing:="" -webkit-text-stroke-width:="" background-color:="" rgb(255,="" 255,="" 255);="" text-decoration-thickness:="" initial;="" text-decoration-style:="" text-decoration-color:="" initial;"="" class="redactor-keep-figure redactor-component" data-redactor-type="image"><img src="https://fabrikmedia.blob.core.windows.net/1lfb/d9b3def77f1bcbb1.PNG" data-image="d9b3def77f1bcbb1.PNG" class="lazyload" style="border: 0px; vertical-align: middle; outline: 0px !important; box-sizing: inherit; max-width: 100%; height: auto !important;"></figure>
+![image](https://user-images.githubusercontent.com/46078489/139802771-194c6712-00ae-4c2c-a57a-670301cb5706.png)
+
 
 An APP that will help the teachers get the results of answer sheet of the students faster and automatically . Just browse scan image,then let it grades the exam and return the number of correct/wrong marked. The enhancements compare with other same-purpose-apps are it can detetect all cases of wrong-marked as mark more than 1 sheet or not mark any sheet, it also let the exam-manager manage the volume threshold of ink line,if a mark is too dull/unclear ,it will be graded as wrong.
 
