@@ -1,6 +1,3 @@
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { 
-    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit 
-}
 
 $DESTINATION_ROOT_PATH = (get-item $PSScriptRoot ).parent.FullName
 Write-Host "[INFO ] $DESTINATION_ROOT_PATH"
@@ -8,7 +5,6 @@ Write-Host "[INFO ] $DESTINATION_ROOT_PATH"
 Add-Type -AssemblyName System.Windows.Forms
 
 # Default special folder when Open Folder Dialog
-$DEFAULT_ROOT_FOLDER = "MyComputer"
 # プログラムの修正を適応（設定ファイルを含め）するためパス
 $DESTINATION_ROOT_PATH = "E:\ThangHM\test_folder\homata123"
 # Service name
@@ -65,53 +61,47 @@ function SelectFolderBrowserDialog([string]$InitialDirectory, [string]$descripti
 }
 
 # Check run admin
-if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))  
-{    
-    Write-Host "[INFO ] Can not run script without administrator"
-    # $arguments = "& '" +$myinvocation.mycommand.definition + "'"
-    # Start-Process powershell -Verb runAs -ArgumentList $arguments
-    # Break    
-}else{
-    # 実環境のsys_config,contstant.py（現在の設定）から各設定を取得するパス
-    # 現在動作中のフォルダを指定するフォルダ指定をできる
-    Write-Host "[INFO ] Please select current mnw-server folder"
-    
-    if(ServiceExists($TEST_SERVICE_NAME_1)){
-        Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_1
-        stop-service -Name $TEST_SERVICE_NAME_1 -Force                
-    }
-    if(ServiceExists($TEST_SERVICE_NAME_2)){
-        Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_2
-        stop-service -Name $TEST_SERVICE_NAME_2 -Force
-    }
-    
 
-        # Get current branch name
-    $current_branch = git rev-parse --abbrev-ref HEAD
+# 実環境のsys_config,contstant.py（現在の設定）から各設定を取得するパス
+# 現在動作中のフォルダを指定するフォルダ指定をできる
+Write-Host "[INFO ] Please select current mnw-server folder"
 
-    Write-Host "The current branch is: $current_branch"
-
-
-    # Prompt user to select branch they wish to merge from
-    Write-Host "Start merging from develop"
-
-
-    # Move to the develop branch
-    git checkout develop
-
-    # Merge the current branch into the develop branch
-    git merge $current_branch
-
-    # Move back to the target branch
-    git checkout $current_branch
-
-    # Merge the target branch back into the source branch
-    git merge develop
-
-    Write-Host "Finish merging from develop"
-
-    Start-Sleep 10
+if(ServiceExists($TEST_SERVICE_NAME_1)){
+    Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_1
+    stop-service -Name $TEST_SERVICE_NAME_1 -Force                
 }
+if(ServiceExists($TEST_SERVICE_NAME_2)){
+    Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_2
+    stop-service -Name $TEST_SERVICE_NAME_2 -Force
+}
+
+
+    # Get current branch name
+$current_branch = git rev-parse --abbrev-ref HEAD
+
+Write-Host "The current branch is: $current_branch"
+
+
+# Prompt user to select branch they wish to merge from
+Write-Host "Start merging from develop"
+
+
+# Move to the develop branch
+git checkout develop
+
+# Merge the current branch into the develop branch
+git merge $current_branch
+
+# Move back to the target branch
+git checkout $current_branch
+
+# Merge the target branch back into the source branch
+git merge develop
+
+Write-Host "Finish merging from develop"
+
+Start-Sleep 10
+
 
 
 
