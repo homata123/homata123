@@ -1,15 +1,11 @@
-
-$DESTINATION_ROOT_PATH = (get-item $PSScriptRoot ).parent.FullName
-Write-Host "[INFO ] $DESTINATION_ROOT_PATH"
-
-Add-Type -AssemblyName System.Windows.Forms
-
 # Default special folder when Open Folder Dialog
 # プログラムの修正を適応（設定ファイルを含め）するためパス
-$DESTINATION_ROOT_PATH = "E:\ThangHM\test_folder\homata123"
+
 # Service name
 $TEST_SERVICE_NAME_1 = "Service1"
 $TEST_SERVICE_NAME_2 = "Service2"
+
+
 
 # Determines if a Service exists with a name as defined in $ServiceName.
 # Returns a boolean $True or $False.
@@ -67,15 +63,18 @@ function SelectFolderBrowserDialog([string]$InitialDirectory, [string]$descripti
 Write-Host "[INFO ] Please select current mnw-server folder"
 
 # Stop the service if it is running
-$serviceName1 = $TEST_SERVICE_NAME_1
-$serviceName2 = $TEST_SERVICE_NAME_2
-if ((Get-Service -Name $serviceName1).Status -eq 'Running') {
-    Stop-Service -Name $serviceName1
+$TEST_SERVICE_NAME_1
+$TEST_SERVICE_NAME_2
+if(ServiceExists($TEST_SERVICE_NAME_1)){
+    if ((Get-Service -Name $TEST_SERVICE_NAME_1).Status -eq 'Running') {
+    Stop-Service -Name $TEST_SERVICE_NAME_1 -Force 
+    }
 }
-if ((Get-Service -Name $serviceName2).Status -eq 'Running') {
-    Stop-Service -Name $serviceName2
+if(ServiceExists($TEST_SERVICE_NAME_2)){
+    if ((Get-Service -Name $TEST_SERVICE_NAME_2).Status -eq 'Running') {
+        Stop-Service -Name $TEST_SERVICE_NAME_2 -Force 
+    }
 }
-
 
     # Get current branch name
 $current_branch = git rev-parse --abbrev-ref HEAD
@@ -103,8 +102,8 @@ Write-Host "Finish merging from develop"
 
 
 # Start the service
-Start- -Name $serviceName1
-Start- -Name $serviceName2
+Start-Service -Name $TEST_SERVICE_NAME_1
+Start-Service -Name $TEST_SERVICE_NAME_2
 
 
 Start-Sleep 10
