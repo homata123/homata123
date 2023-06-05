@@ -66,13 +66,14 @@ function SelectFolderBrowserDialog([string]$InitialDirectory, [string]$descripti
 # 現在動作中のフォルダを指定するフォルダ指定をできる
 Write-Host "[INFO ] Please select current mnw-server folder"
 
-if(ServiceExists($TEST_SERVICE_NAME_1)){
-    Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_1
-    stop-service -Name $TEST_SERVICE_NAME_1 -Force                
+# Stop the service if it is running
+$serviceName1 = $TEST_SERVICE_NAME_1
+$serviceName2 = $TEST_SERVICE_NAME_2
+if ((Get-Service -Name $serviceName1).Status -eq 'Running') {
+    Stop-Service -Name $serviceName1
 }
-if(ServiceExists($TEST_SERVICE_NAME_2)){
-    Write-Host "[INFO ] Stopping service" $TEST_SERVICE_NAME_2
-    stop-service -Name $TEST_SERVICE_NAME_2 -Force
+if ((Get-Service -Name $serviceName2).Status -eq 'Running') {
+    Stop-Service -Name $serviceName2
 }
 
 
@@ -99,6 +100,12 @@ git checkout $current_branch
 git merge develop
 
 Write-Host "Finish merging from develop"
+
+
+# Start the service
+Start- -Name $serviceName1
+Start- -Name $serviceName2
+
 
 Start-Sleep 10
 
