@@ -1,1 +1,2 @@
-origin spec
+modified spec
+modified2 spec
