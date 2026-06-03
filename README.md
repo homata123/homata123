@@ -6,7 +6,7 @@
      <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/main/img/banner.png" width="100%" alt="Banner" />
      ═══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F17A20,100:1a1a2e&height=120&section=header&text=Homata (Frank)&fontSize=42&fontColor=ffffff&animation=fadeIn" alt="Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F17A20,100:1a1a2e&height=120&section=header&text=Homata%20Frank&fontSize=42&fontColor=ffffff&animation=fadeIn" alt="Header"/>
 
 **Full Stack Developer · Software Engineer · Builder**
 
