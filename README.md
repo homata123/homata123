@@ -1,69 +1,110 @@
-### Hi there 👋
-
 <!--
 **homata123/homata123** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
-
-🔭 I’m currently working on ZeroX,a technology startup company
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 -->
-📫 How to reach me: 
 
-Github: https://github.com/homata123
+# 👋 Hi, I'm Ho Manh Thang
 
-Email: homata123@gmail.com
+## 👨‍💻 About Me
+I'm a 4th year computer science student at Hanoi University of Science and Technology (Bach Khoa HN) with a passion for Machine Learning, AI, and software development. I primarily use Python in my projects and enjoy learning new technologies while working both independently and collaboratively. My strengths lie in researching and implementing models and methods, and I'm continuously improving my skills in frontend, backend, and software engineering.
 
-LinkedIn: https://www.linkedin.com/in/m%E1%BA%A1nh-th%E1%BA%AFng-b6323b19b/
+## 🎓 Education
+**Hanoi University of Science and Technology (Bach Khoa HN)**  
+Bachelor of Science in Computer Science | Expected Graduation: 2026  
+- Relevant Coursework: Machine Learning, Artificial Intelligence, Data Structures, Algorithms, Software Engineering
 
-<figure class="redactor-keep-figure redactor-component" data-redactor-type="image"><img src="https://fabrikmedia.blob.core.windows.net/1lfb/69615e92e0d26aa0.jpg" data-image="69615e92e0d26aa0.jpg" class="lazyload"></figure>
-Welcome to my portfolio page, I am Ho Manh Thang-a 4th year computer science student at HaNoi university of Science and Technology (Bach Khoa HN).
+## 💼 Career & Experience
+**ZeroX Technology Startup Company**  
+*Mentor* | Present  
+- Guiding and supporting team members in technical projects
+- Contributing to startup growth through technical expertise
 
-My orientation and work mainly focused on Machine Learning,AI and i use Python as main language in my projects. I always feel happy to have chance to learn new knowledge and technologies. I can work independently or colaborate with team. Research and implement methods,models are my strengths .I have little experience and knowledges in building FE,BE or software but i can improve myself by learning from people around.
+**AI Internships**  
+Various Companies | Past  
+- Gained practical experience in AI/ML applications
+- Participated in research projects and development teams
 
-🔭 I’m currently working as a mentor on ZeroX,a technology startup company
+## 🛠️ Skills
+| Category | Technologies |
+|----------|--------------|
+| **Languages** | Python |
+| **Frameworks & Libraries** | OpenCV, Streamlit, Pillow, BERT |
+| **Tools** | Git, Docker |
+| **Concepts** | Machine Learning, Computer Vision, Natural Language Processing, Software Development |
 
-Read my posts on blog Viblo.Asia about technology topic here : https://viblo.asia/u/homata123
+## 🌐 Connect with Me
+- **GitHub:** https://github.com/homata123
+- **Email:** homata123@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/m%E1%BA%A1nh-th%E1%BA%AFng-b6323b19b/
+- **Blog:** [Viblo.Asia](https://viblo.asia/u/homata123)
 
-I have ever been an AI internship to earn exprience in some companies, join in research works . Here are some representative projects which i have made,mostly in ML/CV field. (see more in my Github )
+---
 
-1. HUSTGRADE - A Scan-and-Grade exam score local web app built with OpenCV
+## 🚀 My Projects & Tools Ecosystem
 
-![image](https://user-images.githubusercontent.com/46078489/139802771-194c6712-00ae-4c2c-a57a-670301cb5706.png)
+### 🎯 ML & Computer Vision
 
+#### <img src="https://user-images.githubusercontent.com/46078489/139802771-194c6712-00ae-4c2c-a57a-670301cb5706.png" width="40" align="top"> HUSTGRADE - Exam Scoring System
 
-An APP that will help the teachers get the results of answer sheet of the students faster and automatically . Just browse scan image,then let it grades the exam and return the number of correct/wrong marked. The enhancements compare with other same-purpose-apps are it can detetect all cases of wrong-marked as mark more than 1 sheet or not mark any sheet, it also let the exam-manager manage the volume threshold of ink line,if a mark is too dull/unclear ,it will be graded as wrong.
+![HUSTGRADE Screenshot](https://user-images.githubusercontent.com/46078489/139802771-194c6712-00ae-4c2c-a57a-670301cb5706.png)
 
-Tool used:
+An application that helps teachers automatically grade answer sheets by scanning images. It processes scanned exams to detect marked answers and returns correct/incorrect counts.
 
-Python 3.7
+**Key Features:**
+- ✅ Detects various wrong-marking cases (multiple marks, no marks)
+- ✅ Adjustable ink line threshold for unclear marks
+- ✅ Automatic grading with high accuracy
+- ✅ Handles volume threshold management
 
-OpenCV
+**Tech Stack:** Python 3.7, OpenCV, Streamlit, Pillow  
+**Status:** 🟢 Stable
 
-Streamlit
+---
 
-Pillow
+#### <img src="https://fabrikmedia.blob.core.windows.net/1lfb/d149d4993a6eda6b.PNG" width="40" align="top"> Text Summarization Tool
 
-2. Innovated "Summarizing-and -Correcting Text" method using mixing-similarity-measures and Bert summarize model
+![Text Summarization Architecture](https://fabrikmedia.blob.core.windows.net/1lfb/d149d4993a6eda6b.PNG)
 
-<figure style="display: block; margin: 0px 0px 1.625em; outline: 0px !important; position: relative; box-sizing: inherit; padding: 0px; font-weight: 300; font-size: 16px; clear: both; color: rgb(27, 30, 35); font-family: " open="" sans",="" "helvetica="" neue",="" helvetica,="" arial,="" sans-serif;="" font-style:="" normal;="" font-variant-ligatures:="" font-variant-caps:="" letter-spacing:="" orphans:="" 2;="" text-align:="" start;="" text-indent:="" 0px;="" text-transform:="" none;="" white-space:="" widows:="" word-spacing:="" -webkit-text-stroke-width:="" background-color:="" rgb(255,="" 255,="" 255);="" text-decoration-thickness:="" initial;="" text-decoration-style:="" text-decoration-color:="" initial;"="" class="redactor-keep-figure redactor-component" data-redactor-type="image"><img src="https://fabrikmedia.blob.core.windows.net/1lfb/d149d4993a6eda6b.PNG" data-image="d149d4993a6eda6b.PNG" class="lazyload" style="border: 0px; vertical-align: middle; outline: 0px !important; box-sizing: inherit; max-width: 100%; height: auto !important;"></figure>
+A self-research project based on recent NLP advancements for text summarization. The system takes an input text (scientific paper, pre-publication news) and returns a customizable-length summary.
 
-<figure style="display: block; margin: 0px 0px 1.625em; outline: 0px !important; position: relative; box-sizing: inherit; padding: 0px; font-weight: 300; font-size: 16px; clear: both; color: rgb(27, 30, 35); font-family: " open="" sans",="" "helvetica="" neue",="" helvetica,="" arial,="" sans-serif;="" font-style:="" normal;="" font-variant-ligatures:="" font-variant-caps:="" letter-spacing:="" orphans:="" 2;="" text-align:="" start;="" text-indent:="" 0px;="" text-transform:="" none;="" white-space:="" widows:="" word-spacing:="" -webkit-text-stroke-width:="" background-color:="" rgb(255,="" 255,="" 255);="" text-decoration-thickness:="" initial;="" text-decoration-style:="" text-decoration-color:="" initial;"="" class="redactor-keep-figure redactor-component" data-redactor-type="image"><img src="https://fabrikmedia.blob.core.windows.net/1lfb/d149d4993a6eda6b.PNG" data-image="d149d4993a6eda6b.PNG" class="lazyload" style="border: 0px; vertical-align: middle; outline: 0px !important; box-sizing: inherit; max-width: 100%; height: auto !important;"></figure>
+**Approach:**
+- Combines similarity measures (Cosine, Jaccard) to identify meaningful sentences
+- Utilizes BERT model for keyword extraction
+- Efficient processing with high accuracy potential
 
-This is my self-research project based on latest reseachs of other scientists in NLP field for solving the summarize-text problem. It simply get an input original text ( i.e a science paper,a newspaper before public) and return a summary text which can be specified the number of output sentence. It take advantages from some efficient similarity measure as Cosine and Jaccard to find the most meaningful sentences in a short time ,in additional the Bert model is used to find the key words in text. Therefore it can achieve the task with highly proper resources and accuracy. It is still in development progress but the result seems very potential.
+**Tech Stack:** Python 3.7, BERT Model, Streamlit  
+**Status:** 🟡 Development
 
-Tool used:
+---
 
-Python 3.7
+### 🛠️ Development Tools
+*(Add your tools here)*
 
-BERT model
+---
 
-Streamlit
+### 📦 Contributing Projects
+*(Add your contributions here)*
 
+---
 
+## 📈 GitHub Stats
+
+<table>
+<tr>
+<td>
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=homata123&show_icons=true&theme=radical&hide=issues,contribs)
+
+</td>
+<td>
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=homata123&layout=compact&theme=radical)
+
+</td>
+</tr>
+</table>
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/homata123">Ho Manh Thang</a></p>
