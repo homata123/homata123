@@ -15,6 +15,14 @@
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:homata123@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/homata123)
 
+<br/>
+
+<!-- Profile views: CounterAPI badge (increments when this README is loaded). Requires PUBLIC counter — see comment at bottom. -->
+<img
+  src="https://api.counterapi.dev/v2/vmb-cg/homata123-github/up?badge=true&label=Profile%20views&color=F17A20"
+  alt="Profile views"
+/>
+
 </div>
 
 ---
@@ -228,5 +236,33 @@ Let's connect if you're building something interesting or want to collaborate.
         - YOUR_EMAIL@example.com
         - YOUR_LINKEDIN
         - YOUR_PORTFOLIO_URL
+
+     ═══════════════════════════════════════════════════════════════════
+     PROFILE VIEW COUNTER (CounterAPI)
+     ═══════════════════════════════════════════════════════════════════
+
+     Your counter: workspace `marvis-initialize`, name `homata123-github`
+
+     GitHub README is static HTML — you CANNOT put your API key in README.md
+     (anyone could steal and abuse it). Use the public badge URL instead:
+
+       https://api.counterapi.dev/v2/marvis-initialize/homata123-github/up?badge=true
+
+     SETUP (required once):
+     1. Log in at https://counterapi.dev/dashboard
+     2. Open workspace `marvis-initialize` → counter `homata123-github`
+     3. Set the counter (or workspace) to **Public** — private counters return 401 in README
+     4. Paste this README into github.com/homata123/homata123 as README.md
+     5. Open your profile — the badge should show and count +1 per view (via image load)
+
+     Optional badge query params: label, color (hex without #), abbreviate=true
+
+     API key (curl with Bearer) is only for private counters / server-side / dashboard.
+     If your key was ever shared in chat or committed, regenerate it in the dashboard.
+
+     Test in browser (after making public):
+       https://api.counterapi.dev/v2/marvis-initialize/homata123-github/up?badge=true
+
+     Read-only count (no increment): GET .../homata123-github (still needs public counter)
 
      ═══════════════════════════════════════════════════════════════════ -->
